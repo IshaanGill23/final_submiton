@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Argument 3</title>
+    <style>
+      /* Sets background color and removes default margins */
+      body {
+        background-color: rgb(43, 37, 37);
+        margin: 0px;
+      }
+      /* Adds margin to the main content */
+      main {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      /* Centers heading and sets text color */
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      /* Styles navigation bar */
+      .navbar ul {
+        list-style-type: none;
+        background-color: goldenrod;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+      }
+      /* Styles navbar links */
+      .navbar a {
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+      }
+      /* Changes background color of navbar links on hover */
+      .navbar a:hover {
+        background-color: gray;
+      }
+      /* Floats navbar list items to align horizontally */
+      .navbar li {
+        float: left;
+      }
+      /* Centers content and creates spacing */
+      .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      /* Restricts maximum size of embedded video */
+      iframe {
+        max-width: 500px;
+        max-height: 500px;
+      }
+      /* Styles form text color */
+      form {
+        margin-top: 20px;
+        color: white;
+      }
+      /* Adds spacing to form labels */
+      label {
+        margin-right: 10px;
+      }
+      /* Adds margin to dropdown select elements */
+      select {
+        margin-left: 10px;
+      }
+      /* Styles submit button */
+      input[type="submit"] {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: goldenrod;
+        border: none;
+        color: black;
+        cursor: pointer;
+      }
+      /* Changes background color of submit button on hover */
+      input[type="submit"]:hover {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li style="font-size: 30px">
+          <a href="index.html">Argument page 1</a>
+        </li>
+        <li style="font-size: 30px">
+          <a href="Page2.html">Argument page 2</a>
+        </li>
+        <li style="font-size: 30px">
+          <a href="Page3.html">Argument page 3</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>
+      Here is a video to prove my point and also some fun questions for you to
+      answer
+    </h1>
+    <div class="content-container">
+      <!-- Embedded YouTube video -->
+      <iframe
+        width="500"
+        height="500"
+        src="https://www.youtube.com/embed/zR1sg_Zi0KI"
+        title="Resident Evil 2 (2019) is a HORRIFYING MASTERPIECE"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      <!-- Form for selecting the main character -->
+      <form
+        name="Jill"
+        action="https://en.wikipedia.org/wiki/Leon_S._Kennedy"
+        id="travel-suggestion-1"
+        method="post">
+        <label for="Main character"
+          >Who is the male main character of Resident Evil 2</label
+        >
+        <select name="Main character" id="main-character">
+          <option value="Jill">Jill</option>
+          <option value="Leon">Leon</option>
+          <option value="Ethan">Ethan</option>
+          <option value="Hesinburg">Hesinburg</option>
+        </select>
+      </form>
+    </div>
+    <!-- Form for selecting the best-selling game -->
+    <form action="https://en.wikipedia.org/wiki/Resident_Evil_2" method="post">
+      <fieldset>
+        <legend>Which game has sold the most? Choose them in order</legend>
+        <input type="checkbox" id="RE2" name="Sold" />
+        <label for="RE2">RE2</label><br />
+        <input type="checkbox" id="RE3" name="Sold" />
+        <label for="RE3">RE3</label><br />
+        <input type="checkbox" id="RE4" name="Sold" />
+        <label for="RE4">RE4</label><br />
+      </fieldset>
+    </form>
+    <!-- Form for favorite game and oldest game selection -->
+    <form action="https://en.wikipedia.org/wiki/Resident_Evil_2" method="post">
+      <fieldset>
+        <legend style="color: white">Enter your favorite game:</legend>
+        <input
+          type="text"
+          id="favorite-game"
+          name="favorite-game"
+          maxlength="30"
+          placeholder="Enter Game Name" /><br />
+        <legend style="color: white">
+          Which Resident Evil game is the oldest
+        </legend>
+        <input type="radio" id="RE0" name="oldest-game" value="RE0" />
+        <label for="RE0">RE0</label><br />
+        <input type="radio" id="RE2-radio" name="oldest-game" value="RE2" />
+        <label for="RE2-radio">RE2</label><br />
+        <input type="radio" id="RE4-radio" name="oldest-game" value="RE4" />
+        <label for="RE4-radio">RE4</label><br />
+      </fieldset>
+    </form>
+    <!-- Form for rating Resident Evil 2 -->
+    <form>
+      <fieldset>
+        <legend>How much do you love RE2?</legend>
+        <label for="Love for RE2">Love for RE2</label>
+        <input
+          type="range"
+          id="Love for RE2"
+          name="Love For RE2"
+          min="0"
+          max="100"
+          value="50" />
+      </fieldset>
+    </form>
+    <!-- Submit button to send form data -->
+    <form action="https://en.wikipedia.org/wiki/Resident_Evil_2" method="post">
+      <fieldset>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
